@@ -36,8 +36,8 @@ function _createModal(options){
            <span class="modal-tittle">${options.tittle}</span><br/>
            ${options.closable ? `<span class="modal-close" data-close='true'>&times;</span>` : ''} 
           </div>
-          <div class="modal-body" data-content>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eius possimus alias neque ratione dignissimos soluta eum a rem inventore sed aliquid explicabo numquam voluptatibus doloremque odio, nisi illo vel sint, molestiae consequuntur ex! Quas quisquam nesciunt aspernatur, cum iste impedit, aut voluptas deleniti dolorum, est dolorem. Sint, excepturi facere.</p>
+          <div class="modal-body" >
+          <p data-content>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eius possimus alias neque ratione dignissimos soluta eum a rem inventore sed aliquid explicabo numquam voluptatibus doloremque odio, nisi illo vel sint, molestiae consequuntur ex! Quas quisquam nesciunt aspernatur, cum iste impedit, aut voluptas deleniti dolorum, est dolorem. Sint, excepturi facere.</p>
           </div>
           </div>
       </div> 

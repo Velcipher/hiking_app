@@ -27,7 +27,7 @@ const toHtml = fruit =>`
       <div class="card-body">
         <h5 class="card-title">${fruit.tittle}</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-primary" data-btn='go'>Go somewhere</a>
       </div>
         </div>
     </div>
@@ -39,5 +39,13 @@ function render(){
 
 }
 render()
+
+document.addEventListener('click', event => {
+const btnType = event.target.dataset.btn
+
+if (btnType === 'go'){
+console.log('go!')
+}
+})
 
 const modal = $.modal(options)

@@ -44,7 +44,7 @@ document.addEventListener('click', event => {
 const btnType = event.target.dataset.btn
 
 if (btnType === 'go'){
-console.log('go!')
+modal.open()
 }
 })
 

@@ -41,7 +41,7 @@
  width: 800px;
 height: 300px;
  border-radius: 5px;
- background: rgb(4, 231, 235);
+ background: rgb(255, 255, 255);
  margin: 0px auto;
 transform: translateY(-400px);
     transition: transform .2s ease-in;

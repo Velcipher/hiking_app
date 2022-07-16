@@ -15,4 +15,29 @@ const options = {
     ],
    
 }
+const fruits = [
+    {id:1, tittle: 'apple', info:'35', url:'img/apple.png'},
+    {id:2, tittle: 'cherry', info:'80', url:'img/cherry.png'},
+    {id:3, tittle: 'papaya', info:'250', url:'img/papaya.png'}
+]
+const toHtml = fruit =>`
+<div class="col-md-4 mb-3">
+        <div class="card" style="width: auto;">
+      <img src="${fruit.url}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">${fruit.tittle}</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+        </div>
+    </div>
+`
+
+function render(){
+    const html = fruits.map(fruit => toHtml(fruit)).join('')
+    document.querySelector('#places').innerHTML = html
+
+}
+render()
+
 const modal = $.modal(options)

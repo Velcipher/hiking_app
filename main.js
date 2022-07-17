@@ -17,9 +17,8 @@ function _createModalFooter(buttons = []){
     const $btn = document.createElement('button')
     $btn.textContent = btn.text
     $btn.classList.add('btn')
-    $btn.classList.add(`btn-${btn.type || 'secondary'}`)
+    // $btn.classList.add(`btn-${btn.type || 'secondary'}`)
     $btn.onclick = btn.handler || noop
-
     place.appendChild($btn)
   })
   return place

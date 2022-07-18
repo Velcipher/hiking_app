@@ -9,7 +9,7 @@
 }
 
 #navBar {
-    background: #60efc3;
+    background: #84e3f2;
     position: fixed;
     width: 100%;
 }
@@ -71,6 +71,9 @@ li {
 .imodal.open .modal-window {
     transform: translateY(100px);
 }
+.imodal.open .modal-body{
+    transform: scale(sx, 2);
+}
 
 .imodal.open .modal-overlay {
     background: rgba(0, 0, 0, 0.7);
@@ -105,12 +108,18 @@ li {
 
 .modal-window {
     width: 800px;
-    height: 300px;
+    height: 500px;
     border-radius: 5px;
     background: rgb(255, 255, 255);
     margin: 0px auto;
     transform: translateY(-200px);
     transition: transform .2s ease-in;
+    overflow-y: scroll;
+}
+.modalImg {
+   
+    max-width: 100%;
+    height: auto;
 }
 
 .modal-body {

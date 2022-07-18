@@ -29,9 +29,9 @@ const options = {
 
 
 const trips = [
-    {id:1, tittle: 'Pyrenees', info:'35', url:'img/Pyrenees1.jpg'},
-    {id:2, tittle: 'Kazbegi', info:'80', url:'img/Kazbegi1.jpg'},
-    {id:3, tittle: 'Niagara Falls', info:'250', url:'img/Niagara_falls1.jpg'}
+    {id:1, tittle: 'Pyrenees', info:'The Pyrenees mountain range separates the Iberian Peninsula from the rest of Europe, stretching more than 430km between Spain and France and rising higher than 3,400m in elevation. ', url:'img/Pyrenees1.jpg'},
+    {id:2, tittle: 'Kazbegi', info:'National Park is located on the northern slopes of the mighty Caucasus range, and its protected area covers a total of over 8,700 hectares. At 5,047 metres above sea level, Kazbegi Mountain (or Mkinvartsveri) is the third highest mountain in Georgia, and is surrounded by myths and religious tradition.', url:'img/Kazbegi1.jpg'},
+    {id:3, tittle: 'Niagara Falls', info:'Niagara Falls is a group of three waterfalls at the southern end of Niagara Gorge, spanning the border between the province of Ontario in Canada and the state of New York in the United States. The largest of the three is Horseshoe Falls, which straddles the international border of the two countries.', url:'img/Niagara_falls1.jpg'}
 ]
 const toHtml = trip =>`
 <div class="col-md-4 mb-3">
@@ -39,7 +39,7 @@ const toHtml = trip =>`
       <img src="${trip.url}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">${trip.tittle}</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">${trip.info}</p>
         <a  class="btn" data-btn='go'>More info</a>
       </div>
         </div>

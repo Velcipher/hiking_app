@@ -3,11 +3,20 @@
     --primary-color: #60efc3;
 }
 
+p{
+    margin-bottom: 30px !important;
+}
 .rama {
     height: 300px;
     background: #60efc3;
 }
-
+.card {
+    min-height: 550px;
+}
+.card-body {
+    position: relative;
+        padding-bottom: 50px;
+}
 #navBar {
     background: #84e3f2;
     position: fixed;
@@ -17,11 +26,6 @@
 .navbar {
     margin-top: -91px;
     z-index: 1;
-}
-
-.navbar-toggler {
-    background: rgb(252, 252, 252);
-    border: 2px solid #000;
 }
 
 li {
@@ -38,11 +42,24 @@ li {
 .navbar-collapse .collapse .show {
     border: #60efc3;
 }
+.navbar-toggler {
+    border: 2px solid rgb(0, 0, 0) !important;
+    background-color: rgb(255, 255, 255) !important;
+}
 
 #o {
     margin-top: 0;
 }
 
+.btn {
+    
+    margin: 15px;
+    border: 3px solid rgb(139, 166, 239) !important;
+    border-radius: 5px;
+    background: #84e3f2 !important;
+    box-shadow: 2px 3px 4px 0px;
+
+}
 .text-center {
     text-align: center;
 }
